@@ -393,3 +393,7 @@ C:\Users\pmali\source\repos\LibApp\obj\Debug\net5.0\LibApp.dll
 C:\Users\pmali\source\repos\LibApp\obj\Debug\net5.0\ref\LibApp.dll
 C:\Users\pmali\source\repos\LibApp\obj\Debug\net5.0\LibApp.pdb
 C:\Users\pmali\source\repos\LibApp\obj\Debug\net5.0\LibApp.genruntimeconfig.cache
+C:\Users\pmali\source\repos\LibApp\obj\Debug\net5.0\Razor\Views\Books\Index.cshtml.g.cs
+C:\Users\pmali\source\repos\LibApp\obj\Debug\net5.0\Razor\Views\Customers\Details.cshtml.g.cs
+C:\Users\pmali\source\repos\LibApp\obj\Debug\net5.0\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Users\pmali\source\repos\LibApp\obj\Debug\net5.0\Razor\Views\Shared\_NavBar.cshtml.g.cs
