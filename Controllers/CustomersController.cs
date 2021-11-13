@@ -5,21 +5,32 @@ using System.Linq;
 using System.Threading.Tasks;
 using LibApp.Models;
 using LibApp.ViewModels;
+using LibApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibApp.Controllers
 {
     public class CustomersController : Controller
     {
+
+        public readonly ApplicationDbContext _context;
+
+        public CustomersController(ApplicationDbContext context) {
+            this._context = context;
+        }
+
         public ViewResult Index()
         {
-            var customers = GetCustomers();
-            
+            var customers = this._context.Customers
+                .Include(c=> c.MembershipType)
+                .ToList();
+
             return View(customers);
         }
 
         public IActionResult Details(int id)
         {
-            var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
+            var customer = this._context.Customers.SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
             {
